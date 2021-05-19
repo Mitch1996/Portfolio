@@ -36,7 +36,7 @@ export default class About extends Component {
                   </div>
                   <Row>
                      <Col lg={12}>
-                        <div class=" db_about_text_wapper db_common_text wow fadeIn"><strong>Mijn naam is Mitchell
+                        <div className="db_about_text_wapper db_common_text wow fadeIn"><strong>Mijn naam is Mitchell
                            Nooitgedacht , </strong> in de zoektocht naar een nieuwe functie met doorgroeimogelijkheden
                            en de kans om mee te werken aan diverse projecten waar ik met mijn eigen ideeën kan
                            komen. Back-end development is ook precies de kant die ik op wil vanwege de vele

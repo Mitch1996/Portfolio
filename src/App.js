@@ -4,6 +4,9 @@ import TopBar from "./components/TopBar";
 import Background from "./components/BackGround";
 import About from "./components/About";
 import Recent from "./components/Recent";
+import Skills from "./components/Skills";
+import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 
 export function App() {
    return (
@@ -12,6 +15,9 @@ export function App() {
          <Recent/>
          <Background/>
          <About/>
+         <Skills/>
+         <Resume/>
+         <Footer/>
       </BrowserRouter>
    );
 }
