@@ -1,15 +1,16 @@
 const path = require('path');
 const Mini = require('mini-css-extract-plugin')
+const loader = require('url-loader')
 
 module.exports = {
    output: {
-      path: path.join(__dirname, '/dist'),
-      filename: 'index.bundle.js',
+      path: path.join(__dirname, 'public'),
+      filename: 'bundle.js',
    },
    devServer: {
       port: 3010,
-      watchContentBase : true,
-   } ,
+      watchContentBase: true,
+   },
    module: {
       rules: [
          {
@@ -18,7 +19,7 @@ module.exports = {
             use: {
                loader: 'babel-loader',
             }
-         } ,
+         },
          {
             test: /\.scss$/,
             use: [
@@ -26,12 +27,14 @@ module.exports = {
                'css-loader',
                'sass-loader',
             ],
-         } ,
-         {
-            test: /\.(png|svg|jpg|jpeg|gif)$/i,
-            type: 'asset/resource',
          },
+         {
+            test: /\.(jpg|png)$/,
+            use: {
+               loader: 'url-loader',
+            },
+         }
       ]
-   } ,
+   },
    plugins: [new Mini()],
 };
