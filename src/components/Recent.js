@@ -3,7 +3,6 @@ import WOW from 'wowjs'
 import {Container, Row, Col, Card} from "react-bootstrap";
 import pic1 from '../assets/vondel.jpg'
 import pic2 from '../assets/stamp.png'
-import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import recent from '../assets/download.png';
 import {faSearch} from "@fortawesome/free-solid-svg-icons";
@@ -33,10 +32,10 @@ export default class Recent extends React.Component {
                         <div className="tab-content" id="pills-tabContent">
                            <div className="tab-pane fade show active" id="showall" role="tabpanel" aria-labelledby="showall-tab">
                               <Row className="justify-content-center">
-                                 <Col lg = {"auto"} md={6} sm={8}>
+                                 <Col lg = {"auto"} md = {"auto"} sm={"auto"} xs={"auto"}>
                                     <div className="Portfolio">
                                        <Card style={{ width: '20rem' }}>
-                                          <Card.Img src={pic1} />
+                                          <Card.Img variant={"top"} src={pic1} />
                                           <figcaption className="fig-caption"><FontAwesomeIcon icon={faSearch} />
                                              <h5 className="title">Website Front - End</h5>
                                              <span className="sub-title">VondelGym</span> <a className="gallery" href="https://vondelgym.nl/"/>
@@ -44,18 +43,7 @@ export default class Recent extends React.Component {
                                        </Card>
                                     </div>
                                  </Col>
-                                 <Col lg = {"auto"} md = {6} sm={8}>
-                                    <div className="Portfolio">
-                                       <Card style={{ width: '20rem' }}>
-                                          <Card.Img src={pic2} />
-                                          <figcaption className="fig-caption"><FontAwesomeIcon icon={faSearch} />
-                                             <h5 className="title">Website Front - End</h5>
-                                             <span className="sub-title">StampWallet</span> <a className="gallery" href="https://customerloyaltyapp.com/"/>
-                                          </figcaption>
-                                       </Card>
-                                    </div>
-                                 </Col>
-                                 <Col lg = {"auto"} md = {6} sm={8}>
+                                 <Col lg = {"auto"} md = {"auto"} sm={"auto"} xs={"auto"}>
                                     <div className="Portfolio">
                                        <Card style={{ width: '20rem' }}>
                                           <Card.Img src={pic2} />

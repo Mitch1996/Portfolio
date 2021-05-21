@@ -61,9 +61,9 @@ export default class About extends Component {
                         <ul className="db_common_text db_personal_details">
                            <li className="wow fadeInUp"><strong>Geboortedatum</strong>03-07-1996</li>
                            <li className="wow fadeInUp"><strong>Phone</strong>0624448777</li>
-                           <li className="wow fadeInUp"><strong>Email</strong>Mitchell.n@outlook.com</li>
-                           <li className="wow fadeInUp"><strong>Website</strong>www.mitchnooit.com</li>
-                           <li className="wow fadeInUp"><strong>Huidige Positie</strong><span>FreeLance</span>
+                           <li className="wow fadeInUp"><strong>Email</strong><a href="mailto:mitchell.n@outlook.com">mitchell.n@outlook.com</a></li>
+                           <li className="wow fadeInUp"><strong>Locatie</strong>Amsterdam</li>
+                           <li className="wow fadeInUp"><strong>Huidige Positie</strong><span>Student - TechGrounds</span>
                            </li>
                         </ul>
                      </Col>
