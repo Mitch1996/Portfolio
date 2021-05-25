@@ -41,6 +41,10 @@ export default class Resume extends React.Component {
                               <h4> Mbo 4 - Applicatie Ontwikkelaar <a href="#">MboRijnland</a></h4>
                               <div className="db_year">2017-2020</div>
                            </div>
+                           <div className="db_education_item dark_box_bg wow fadeInUp">
+                              <h4> Webontwikkelaar <a href="#">TechGrounds</a></h4>
+                              <div className="db_year">2021 - Heden</div>
+                           </div>
                         </div>
                      </Col>
                      <Col lg = {6}>
